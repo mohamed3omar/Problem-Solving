@@ -2,6 +2,8 @@
     "files.associations": {
         "cmath": "cpp",
         "ios": "cpp",
-        "iomanip": "cpp"
-    }
+        "iomanip": "cpp",
+        "memo_and_momo": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
