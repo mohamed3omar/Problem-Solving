@@ -9,7 +9,7 @@ int main(){
     
     cin >>  a >> b ;
 
-    // operator ^ turn from decimal to binary then sum..
+    // operator ^ turn from decimal into binary then sum..
     result = a ^ b;
 
     cout<< result;
