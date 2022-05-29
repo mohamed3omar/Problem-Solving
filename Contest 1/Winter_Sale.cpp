@@ -5,7 +5,7 @@ using namespace std;
 int main(){
 
     
-    //priceAfter_discount = Origprice - Oerignprie * Discount;
+    //priceAfter_discount = Origprice - Oerignprie * Discout;
 
     double X , P;
 
