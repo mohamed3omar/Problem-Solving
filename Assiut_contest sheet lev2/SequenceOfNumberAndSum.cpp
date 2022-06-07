@@ -27,10 +27,11 @@ int main(){
 
             min = n;
         }
-        else{
+        else
+        {
             max = n;
 
-            min = m;
+            min = m; 
         }
         //print number between n and m by using min , max
         for (int i = min; i <= max; i++)
