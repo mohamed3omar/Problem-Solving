@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-
+    
     int size , seque;
     int min ;
     int flag = 1;
