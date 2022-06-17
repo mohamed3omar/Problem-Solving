@@ -4,14 +4,35 @@ using namespace std;
 
 int main(){
 
-    int n , k;
+    int size , seque;
+    int min ;
+    int flag = 1;
+    cin>> size >> seque;
 
-    cin>> n >> k;
-
-    for (int i = 0; i < n; i++)
+    int counter = 0 ;
+    for (int i = 1; i <= size; i++)
     {
-        
-        /* code */
+        int value;
+        cin>>value;
+        if( flag)
+        {
+            min = value;
+            flag  =  0 ;
+        }
+        else{
+            if( value < min)
+            {
+                min = value;
+            }
+        }
+        counter++;
+        if( counter == seque || i == size )
+        {   
+            cout<< min <<" " ;
+            counter = 0 ;
+            flag = 1;
+        }
+
     }
     
     
