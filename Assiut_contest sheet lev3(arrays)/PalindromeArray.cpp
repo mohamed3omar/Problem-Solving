@@ -32,8 +32,7 @@ int main()
             break;
         }
         if( compare[i] == numbers[i]  )
-        {    
-            
+        {               
             flag++;
             
             if( flag == elements)
