@@ -31,7 +31,7 @@ int main()
                 sum1 += arr[i][j];
             }
             //for second diagonal
-             if( i == (n - j -1))
+            if( i == (n - j -1))
             {
                 sum2 +=arr[i][j];
             }
