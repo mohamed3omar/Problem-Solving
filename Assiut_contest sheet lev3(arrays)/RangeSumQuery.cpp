@@ -3,27 +3,40 @@
 using namespace std;
 
 int main()
-{
-    int n , q , l , r ,sum = 0; 
+{   
+    //for the first time may cause time limit
+    long long n , q ; 
 
     cin>> n >> q;
 
-    int arr[n];
+    long long arr[n];
+    long long arr2[n];
 
     for(int i=0; i<n; i++)
     {
         cin>> arr[i];
+        if( i == 0 )
+        {
+            arr2[i] = arr[i];
+        }
+        else
+        {
+            arr2[i] = arr[i] + arr2[i-1];            
+        }
     }
-    for (int j = 0; j < q ; j++)
+    while (q--)
     {   
-        sum = 0;
+        long long l , r;
 
         cin>> l >> r ;
 
-        for (int i = l-1; i < r; i++)
-        {
-            sum +=arr[i];
-        }
+        l--;
+
+        r--;
+        //l start , r end
+        
+
+        long long sum = arr2[r] - arr2[l] + arr[l];
 
         cout<<sum<<endl; 
 
