@@ -2,6 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 int main()
 {
     string str ;
@@ -19,7 +20,7 @@ int main()
         }
         
         flag = 1; 
-        
+
         cout<< str ;
     }
     
