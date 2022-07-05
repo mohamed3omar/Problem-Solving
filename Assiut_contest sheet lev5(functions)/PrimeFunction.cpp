@@ -2,42 +2,46 @@
 
 using namespace std;
 
-bool isprime( int num)
-{
-    int div  = num / 2 ;
+void isprime( long long cases)
+{   
+    long long number;
 
-    for (int i = 2; i <= div; i++)
+
+    while(cases--)
     {
-        if( num % i == 0 )
+        cin >> number;
+        //for time limit(decrease time)
+        long long div = sqrt(number); 
+
+        if( number == 0 || number == 1)
         {
-            return false;
-            break;
+            cout<<"NO"<<endl;
+            //for time limit decrease time
+            continue;
         }
+        int flag = 0 ;
+        for (int i = 2; i <= div; i++)
+        {
+            if( number % i == 0 )
+            {
+                cout<<"NO"<<endl;
+                flag = 1;
+                break;
+            }
+        }
+        if( flag == 0 )
+        {
+            cout<<"YES"<<endl;
+        }
+        
     }
-    return true;
-    
 }
 
 int main()
 {
-    int tests, number ;
+    long long cases ;
 
-    cin >> tests;
-
-    for (int i = 0; i < tests; i++)
-    {
-        cin>> number;
-
-        bool result = isprime(number);
-
-        if( result  && number != 1 && number != 0 && number > 0 )
-        {
-            cout<<"YES"<<endl;
-        }
-        else
-        {
-            cout<<"NO"<<endl;
-        }
-    }
+    cin >> cases;
     
+    isprime( cases);
 }
