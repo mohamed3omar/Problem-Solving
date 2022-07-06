@@ -2,24 +2,23 @@
 
 using namespace std;
 
-int equation(int x, int n)
+void equation(long long x, long long n)
 {
-    int res = -1;
-
-    if( n % 2 == 1 )
+    long long result = 0 ;
+    for(int i = 2 ; i <= n ; i+=2)
     {
-        n-- ;
+        result += pow(x, i);
     }
     
 
-
+    cout<< result << endl;
     
 
 }
 
 int main()
 {
-    int x , y ;
+    long long x , y ;
 
     cin >> x >> y;
 
