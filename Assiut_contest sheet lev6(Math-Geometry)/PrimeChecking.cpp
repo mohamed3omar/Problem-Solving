@@ -22,6 +22,7 @@ int main()
         if( number % i == 0 )
         {
             flag = 1;
+            
             break;
         }
     }
