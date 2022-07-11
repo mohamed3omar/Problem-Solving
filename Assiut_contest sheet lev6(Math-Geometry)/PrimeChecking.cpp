@@ -10,18 +10,17 @@ int main()
 
     long long div = sqrt(number); 
 
+    bool flag = 0 ;
+
     if( number == 0 || number == 1)
     {
-        cout<<"NO"<<endl;
-        //for time limit decrease time
-    
+        cout<< "NO" ;
+        return 0 ;
     }
-    int flag = 0 ;
     for (int i = 2; i <= div; i++)
     {
         if( number % i == 0 )
         {
-            cout<<"NO"<<endl;
             flag = 1;
             break;
         }
@@ -29,6 +28,9 @@ int main()
     if( flag == 0 )
     {
         cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
     }
 
     
