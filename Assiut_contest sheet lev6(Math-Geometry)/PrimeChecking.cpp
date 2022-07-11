@@ -7,7 +7,7 @@ int main()
     long long number ;
 
     cin >> number ;
-
+    //to decrease the time
     long long div = sqrt(number); 
 
     bool flag = 0 ;
