@@ -19,7 +19,6 @@ int main()
         if( (in != space) &&( in != space -1))
         {
             counter++;
-            continue;
         }
         
     }
