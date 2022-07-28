@@ -30,7 +30,4 @@ int main()
         }
     }
     cout<<isu;
-    
-
-
 }
