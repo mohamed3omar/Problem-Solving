@@ -3,39 +3,35 @@
 using namespace std;
 
 int main()
-{   
-    string str ;
+{
+    string equ ;
 
-    cin >> str ;
+    cin >> equ ;
 
-    if( str.size() == 1 )
-    {
-        cout<< str ;
-    }
-    else{
+    int mysize = (equ.length() / 2 ) + 1 ;
 
-        sort(str.begin() , str.end());
+    int arr[mysize ] ;
 
-    char plus[str.size()-1];
-
-    int z = 0 ;
-
-    for (int i = 0 ; i < str.size(); i++)
-    {
-        if( str[i] == '+' )
-        {
-            plus[z] = str[i] ;
-            z++;
-        }
-    }
     int counter = 0 ;
-    for(int i = z ; i < str.size()-1; i++)
+
+    for(int i = 0 ; i < equ.length() ; i++ )
     {   
-        
-    }  
-
-        
+        if( equ[i] == '+')
+        {
+            continue;
+        }
+        arr[counter] = equ[i] - '0';
+        counter++; 
     }
-
+    int n = sizeof(arr) / sizeof(arr[0]);
+    sort(arr , arr+n );
     
+    for(int i = 0 ; i < mysize ; i++ )
+    {   
+        if( i != 0 )
+        {
+            cout<<"+";
+        }
+        cout<<arr[i];
+    }
 }
