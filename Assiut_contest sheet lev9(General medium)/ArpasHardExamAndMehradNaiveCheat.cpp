@@ -8,26 +8,26 @@ int main()
 
     cin >> n ;
 
-    if(n == 0 )
+    if (n == 0 )
     {
-        cout<<1;
+        cout<<1<<endl;
         return 0 ;
     }
-    if( n % 4 == 0 )
+    if ( n % 4 == 0 )
     {
-        cout<<6 <<endl;
+        cout<<6<<endl;
     }
     else if ( n % 4 == 1 ) 
     {
-        cout<<8 <<endl;
+        cout<<8<<endl;
     }
-    else if( n % 4 == 2 )
+    else if ( n % 4 == 2 )
     {
-        cout<<4 <<endl;
+        cout<<4<<endl;
     }
-    else if ( n % 2 == 3 )
+    else if ( n % 4 == 3 )
     {
-        cout<<2 <<endl;
+        cout<<2<<endl;
     }
     /* 
         note 1 % 4 = 1 ;
