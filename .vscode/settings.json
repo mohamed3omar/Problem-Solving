@@ -14,5 +14,9 @@
         "type_traits": "cpp",
         "utility": "cpp",
         "variant": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "cSpell.words": [
+        "jflajflaj"
+    ]
 }
